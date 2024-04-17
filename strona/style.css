@@ -62,17 +62,17 @@ hr{
 }
 
 #nav ul li:hover{
-    transform:translateY(0.55em)
+    transform:translateY(0.6em)
 }
 
-#nav ul li a:hover{
+#nav ul li a:hover{ 
     color:#f4dc7a;
 }
 
 #nav ul li:hover::after{
     content:'▲';
     font-size:1em;
-    transform:translateY(0.05em);
+    transform:translateY(0.1em);
     color:#f4dc7a;
     display:block;
     text-align: center;
@@ -90,7 +90,7 @@ hr{
 
 
 #running p{
-    margin:0;
+    margin:0 auto;
     color:rgb(255,255,255);
     font-family:'Jockey One',sans-serif;
     display:block;
@@ -118,16 +118,26 @@ hr{
 
 #info li{
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     width:20em;
     height:100%;
-    border-top:0.5em solid #f4dc7a;
+    /* border-top:0.5em solid #f4dc7a;*/
 }
- 
-#info li span:first-child{
+.border-arrow{
+    height:0.4em;
+    width:100%;
+    margin-bottom:5%;
+    display:inline-block;
+    text-align: center;
+    background-color: #f4dc7a;
+    color:#f4dc7a;
+}
+
+.title{
     display:block;
     padding:1% 0;
     font-size:2em;
@@ -140,23 +150,130 @@ hr{
     margin:5px 0;
 }
 
-#info li img+span{
+.content{
+    margin:5% 0;
     font-size: 0.7em;
     font-family: Verdana, sans-serif;
     color:rgb(128,128,128);
 } 
 
-#info li a{
+.more-link{
+    text-decoration: none;
     text-align: center;
     align-self: center;
-    margin:2% 0;
     color:rgb(0,0,0);
     font-family:'Jockey One',sans-serif;
     font-size:1em;
-
 }
 
-#info li a:visited{
+.more-link:visited{
+    color:rgb(0,0,0);
+}
+
+.more-link:hover{
     color:#f4dc7a;
-    text-decoration: none;
+}
+
+#catchphrase{
+    border-top:0.4em solid #f4dc7a;
+    padding: 5% 0;
+}
+
+#catchphrase span{
+    font-family: "Jockey One",sans-serif;
+    display:block;
+    margin:0 auto;
+    width:fit-content;
+}
+
+#catchphrase span:first-child{
+    width:min-content;
+    line-height: 0.75;
+    font-size:5.5em;
+    color:#f4dc7a;
+}
+
+#catchphrase span:first-child + span{
+    font-size:1.75em;
+    font-weight: 600;
+}
+
+#catchphrase span:last-child{
+    color:rgb(150,150,150);
+}
+
+#why-champ{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap:4%;
+    width:100%;
+    height:fit-content;
+}
+
+#why-champ > div{
+    display:block;
+    text-align: center;
+    flex:1;
+}
+
+.icon{
+    font-size:3em;
+    color:#f4dc7a;
+}
+
+#why-champ > div *{
+    display:block;
+}
+
+#foot{
+    background-color: #f4dc7a;
+    height:max-content;
+}
+
+#foot > *,.logo,.sub-logo{
+    color:white;
+    font-family: "Jockey One",Verdana, sans-serif;
+    display:block;
+    margin:0 auto;
+    width:fit-content;
+    height:min-content;
+}
+
+
+#up-arrow{
+    line-height: 70%;
+    width:16em;
+    margin:0 auto;
+    display:block;
+    text-align: center;
+    border-bottom:0.4em solid rgb(70,70,70);
+    color:rgb(70,70,70);
+}
+
+.logo{
+    font-size:5em;
+    line-height: 70%;
+}
+
+.sub-logo{
+    font-size:0.5em;
+    word-spacing: 0.25em;
+}
+
+#contacts{
+    display: block;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+#contacts span{
+    margin:0 0.4em;
+}
+
+#copyright{
+    word-spacing: 0.1em;
+    font-size:0.7em;
+    padding-bottom:4%;
 }
