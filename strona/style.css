@@ -79,6 +79,10 @@ hr{
 }
 
 #running{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-between;
     text-align: center;
     background-image: url('./photo/running-bg-1.jpg');
     width:100%;
@@ -86,8 +90,8 @@ hr{
     background-size:cover;
     background-position: center;
     background-repeat: repeat;
+    transition:background-image 0.5s ease-in-out;
 }
-
 
 #running p{
     margin:0 auto;
